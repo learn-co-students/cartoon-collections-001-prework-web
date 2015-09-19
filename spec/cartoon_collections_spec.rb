@@ -36,13 +36,13 @@ describe "Cartoon Collections" do
     end
   end
 
-  describe "#long_planteer_calls" do
+  describe "#long_planeteer_calls" do
     it "tells us if any calls are longer than 4 characters" do
-      long_planteer_calls = %w(earth wind fire water heart)
-      expect(long_planteer_calls(long_planteer_calls)).to eq(true)
+      long_planeteer_calls = %w(earth wind fire water heart)
+      expect(long_planeteer_calls(long_planeteer_calls)).to eq(true)
 
       short_planeteer_calls = %w(wind fire)
-      expect(long_planteer_calls(short_planeteer_calls)).to eq(false)
+      expect(long_planeteer_calls(short_planeteer_calls)).to eq(false)
     end
   end
 
