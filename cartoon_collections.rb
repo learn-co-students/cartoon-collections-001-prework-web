@@ -32,25 +32,14 @@ def find_the_cheese(cheese) #code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
   (0..cheese.count).each_with_index do |name,index|
-  #cheese.each_with_index do |index|
- # cheese_types.each do |name|
-# cheese[index].include? name
-    puts cheese[index]
+
     answer = cheese_types.include? cheese[index]
     if answer == true
       return cheese[index]
 
-
-
-
     end
-
-
-
 end
   return nil
 end
 
 
-#cheese = ["caramelo","presunto","gouda","pamonha"]
-#find_the_cheese(cheese)
