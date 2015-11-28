@@ -6,8 +6,8 @@ end
 
 
 def summon_captain_planet(array)
-  array.map do |i|
-     "#{i.capitalize}!"
+  array.map do |x|
+    x.capitalize << "!"
   end
 end
 
@@ -18,9 +18,8 @@ def long_planteer_calls(array)
 end
 
 def find_the_cheese(array)  
-  #cheese_types = ["cheddar", "gouda", "camembert"]
-  cheeses = %w(gouda cheddar camembert)
+  cheese_types = ["cheddar", "gouda", "camembert"]
   array.find do |find_cheese|
-    cheeses.include? (find_cheese)
+    cheese_types.include?(find_cheese)
   end
 end
