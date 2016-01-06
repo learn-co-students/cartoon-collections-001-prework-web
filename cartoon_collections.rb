@@ -1,29 +1,15 @@
-def roll_call_dwarves(array)# code an argument here
-  # Your code here
+def roll_call_dwarves(array)
   array.each_with_index {|x,y| puts "#{y+=1}. #{x}"}
 end
 
-def summon_captain_planet(array)# code an argument here
-  # Your code here
-  array
+def summon_captain_planet(array)
   array.map{|x| x.capitalize<<"!"}
 end
 
-def long_planeteer_calls(array)# code an argument here
-  # Your code here
-  array.any? {|x| x.length>4}
+def long_planeteer_calls(array)
+  array.any? {|x| x.length > 4}
 end
 
-def find_the_cheese(array)# code an argument here
-  # the array below is here to help
-  cheese_types = ["cheddar", "gouda", "camembert"]
-  array.find {|x|
-    if cheese_types.include?(x)
-      return x
-    end
-  }
-  nil
+def find_the_cheese(array)
+  array.find {|x| x == "cheddar"}
 end
-
-
-
