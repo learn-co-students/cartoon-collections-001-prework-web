@@ -19,9 +19,7 @@ def find_the_cheese(array) # code an argument here
   cheese_types = ["cheddar", "gouda", "camembert"]
   cheese_types.each do |cheese|
      answer_tmp = array.find { |x| x == cheese }
-     if (answer_tmp != nil)
-       answer = answer_tmp
-     end
+     answer = answer_tmp if answer_tmp != nil
   end
   (answer == "")? nil: answer
 end
