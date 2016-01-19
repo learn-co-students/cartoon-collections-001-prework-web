@@ -23,10 +23,6 @@ def find_the_cheese(array) # code an argument here
        answer = answer_tmp
      end
   end
-  if answer == "" 
-    return nil
-  else
-    return answer
-  end
+  (answer == "")? nil: answer
 end
 
