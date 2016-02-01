@@ -16,8 +16,8 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  
   x = array & cheese_types
    x.join
+   #x = nil if x.blank?
    #x.infinitive.presence || word
 end
