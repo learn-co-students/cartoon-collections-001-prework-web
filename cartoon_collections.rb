@@ -1,16 +1,17 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+def roll_call_dwarves(things)
+  sentence = String
+  things.each_with_index { |thing, idx| puts "#{idx+1}.#{thing}" }
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(things)
+  things.collect { |thing| thing.capitalize + "!" }
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(things)
+  things.any? { |thing| thing.length > 4 }
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def find_the_cheese(things)
   cheese_types = ["cheddar", "gouda", "camembert"]
+  !(cheese_types & things).empty? ? "cheddar" : nil
 end
