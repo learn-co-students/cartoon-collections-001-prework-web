@@ -13,9 +13,5 @@ end
 
 def find_the_cheese(things)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  if (cheese_types & things).empty? == false
-    "cheddar"
-  else
-    nil
-  end
+  !(cheese_types & things).empty? ? "cheddar" : nil
 end
