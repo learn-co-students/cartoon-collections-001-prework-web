@@ -19,14 +19,14 @@ end
 end
 
 def find_the_cheese(bloop)
-   cheese = ["cheddar", "gouda", "camembert"]
-   bloop.find do |a|
-    cheese.include?(a)
-
+   cheeses = ["cheddar", "gouda", "camembert"]
+   bloop.find  do |x|
+   cheeses.include?(x)
   end
-
 end
 
 
 #help source:
 #http://stackoverflow.com/questions/4697557/how-to-map-with-index-in-ruby
+
+
