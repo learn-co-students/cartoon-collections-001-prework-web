@@ -12,11 +12,7 @@ end
 
 def find_the_cheese(arr)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  arr.find do |food|
-    if food == "cheddar" || food == "gouda" || food == "camembert"
-      food
-    else
-      nil
-    end
+  cheese_types.each do |cheese|
+    return arr.find {|food| food == cheese}
   end
 end
