@@ -6,7 +6,7 @@ end
 
 def summon_captain_planet(names)
   names.collect do |name|
-    name.capitalize << "!"
+    name.capitalize + "!"
   end
 end
 
