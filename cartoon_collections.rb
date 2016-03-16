@@ -22,3 +22,4 @@ def find_the_cheese(words)
     cheese_types.include?(word)
   end
 end
+
