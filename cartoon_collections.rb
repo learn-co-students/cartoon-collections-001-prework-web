@@ -14,6 +14,11 @@ end
 
 def find_the_cheese(arg)
   cheese_types = ["cheddar", "gouda", "camembert"]
+  arg.find { |x| cheese_types.include?(x) }
+
+
+
+=begin
   if arg.include?(cheese_types[0])
     return cheese_types[0]
   elsif arg.include?(cheese_types[1])
@@ -23,4 +28,6 @@ def find_the_cheese(arg)
   else
     return nil
   end
+=end
+
 end
