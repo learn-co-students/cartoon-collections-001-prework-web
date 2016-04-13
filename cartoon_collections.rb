@@ -16,19 +16,15 @@ end
 
 def long_planeteer_calls(array_words)# code an argument here
   # Your code here
-  if array_words.count > 4
-      return true
-  else
-      return false
+  array_words.any? do |word|
+      word.length > 4
   end
 end
 
 def find_the_cheese(find_the_cheese)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  if find_the_cheese.include?(cheese_types = "cheddar" || cheese_types = "gouda" || cheese_types = "camembert")
-      return "cheddar" || "gouda" || "camembert"
-  else
-      return nil
+  find_the_cheese.find do |cheese|
+    cheese_types.include?(cheese)
   end
 end
