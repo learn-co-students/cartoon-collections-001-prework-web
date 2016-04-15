@@ -16,10 +16,8 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  tr = 0
   for i in (0..array.count)
     for a in (0..cheese_types.count)
-      puts "i : #{array[i]} , a : #{cheese_types[a]}"
       if array[i] == cheese_types[a]
         return array[i]
       end
