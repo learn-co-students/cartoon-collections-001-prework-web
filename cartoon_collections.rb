@@ -27,3 +27,14 @@ def find_the_cheese(array)
     (cheese_types & array).shift
   end
 end
+
+def find_the_cheese(food_items)
+  cheese_types = ["cheddar", "gouda", "camembert"]
+  food_items.each do |item| 
+    if cheese_types.include?(item)
+      return item
+    end 
+  end 
+end
+
+# could have used .find and had .include?
