@@ -1,50 +1,19 @@
 def roll_call_dwarves(dwarves)
-# dwarves = ["Doc", "Dopey", "Bashful", "Grumpy"]
-	dwarves.each_with_index do |item, index|		
-		puts "#{index + 1}. #{item}"
-	end
+	dwarves.each_with_index { |dwarf, i| puts "#{i + 1}. #{dwarf}"}
 end
 
 def summon_captain_planet(planeteer_calls)
-	# .capitalize will convert str's first char to UC
-
-	planeteer_calls.collect do |x|
-		x.capitalize + "!"
-	end
+	planeteer_calls.collect { |call| call.capitalize << "!"}
 end
-# planeteer_calls = ["earth", "wind", "fire", "water", "heart"]
-# => ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
 
 def long_planeteer_calls(long_planeteer_calls)
-	long_planeteer_calls.each do |x|
-		# iterate through each call & check the .length 
-		if x.length > 4
-			return true
-		else
-			return false
-		end
-	end
+	long_planeteer_calls.any? { |call| call.length > 4 }
 end
 
 def find_the_cheese(array)
- cheese_types = ["cheddar", "gouda", "camembert"]
- # snacks = ["crackers", "gouda", "thyme"]
- # soup = ["tomato soup", "cheddar", "oyster crackers", "gouda"]
-
-answer = array.include?("cheddar" || "gouda" || "camembert")
-
-if answer == true
-	#iterate thru array and check each val against cheese_types. 
-	#if there is a match, return value otherwise return nil
-		array.each do |x|
-		#does x == one of the cheeses? if so return x
-			if x === ("cheddar" || "gouda" || "camembert")
-				return x
-				break
-			else
-			end
-		end
-	else
-	return nil
+	cheese = ["cheddar", "gouda", "camembert"]
+	
+	cheese.find do |cheese|
+		array.include?(cheese)
 	end
 end
