@@ -23,8 +23,4 @@ def find_the_cheese(strings)
   strings.find do |string|
     string.include?("cheddar") || string.include?("gouda") || string.include?("camembert")
   end
-
 end
-
-cheddar_cheese = ["banana", "cheddar", "sock"]
-find_the_cheese(cheddar_cheese)
