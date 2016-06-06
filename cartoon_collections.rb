@@ -24,9 +24,21 @@ def long_planeteer_calls(array)
   end
 end
 
+def planeteer_call_start_with_B(array)
+elementB_array = []
+array.each do |element| 
+  elementB = element.starts_with("B")
+  if elementB == true
+    elementB_array << elementB
+end
+end
+end
+
+
 #To find any elements in the user's array that are the same as any elements in the cheese array  
 def find_the_cheese(array)
   # the array below is here to help
-  cheese_types = ["cheddar", "gouda", "camembert"]
-  array.find {|element| cheese_types.include?(element)}
+  cheese_types = ["cheddar", "gouda", "camembert", "brie"]
+  array.find {|element| !cheese_types.include?(element)}
 end
+
