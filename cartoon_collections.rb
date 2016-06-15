@@ -8,20 +8,20 @@ end
 
 def summon_captain_planet(planeteer_calls)# code an argument here
   # Your code here
-  planeteer_calls.map { |e| e.capitalize << "!" }
+  planeteer_calls.map { |call| call.capitalize << "!" }
 end
 
 def long_planeteer_calls(planeteer_calls)# code an argument here
   # Your code here
-  planeteer_calls.any? do |e|
-    e.length > 4
+  planeteer_calls.any? do |call|
+    call.length > 4
   end
 end
 
-def find_the_cheese(array)# code an argument here
+def find_the_cheese(ingredients)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  array.find do |e|
-    cheese_types.include?(e)    
+  ingredients.find do |ingredient|
+    cheese_types.include?(ingredient)    
   end
 end
