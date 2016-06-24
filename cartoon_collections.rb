@@ -3,18 +3,18 @@ def roll_call_dwarves(dwarves)
 end
 
 def summon_captain_planet(planets)
-  planets.collect { |x| "#{x.capitalize}" + "!"}
+  planets.collect { |x| "#{x.capitalize}" + "!" }
 end
 
 def long_planeteer_calls(calls)
-  calls.any? { |word| word.length >= 5}
+  calls.any? { |word| word.length >= 5 }
 end
 
 def find_the_cheese(food)
   cheese_types = ["cheddar", "gouda", "camembert"]
   include_cheese = food & cheese_types
   if include_cheese.size != 0
-    return include_cheese.join(", ")
+    return include_cheese.shift
   else
     return nil
   end
