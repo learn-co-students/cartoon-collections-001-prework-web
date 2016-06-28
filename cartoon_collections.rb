@@ -18,8 +18,7 @@ def long_planeteer_calls(call)
 end
 
 def find_the_cheese(cheese)
-  if cheese.include?("cheddar") == true
-    return "cheddar"
-  else return nil
+  cheese.find do |maybe|
+    cheese.include?(maybe)
   end
 end
