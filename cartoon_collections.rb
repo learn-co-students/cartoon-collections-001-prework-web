@@ -35,9 +35,9 @@ Iterate over array with .any? (returns true if block evaluates to true) enumerat
 output true if any string is longer than four characters.
 =end
 
-def find_the_cheese(array)
+def find_the_cheese(food)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  array.find { |cheese| cheese_types.include?(cheese) }
+  food.find { |cheese| cheese_types.include?(cheese) }
 end
 =begin
 Iterate over array with .find (returns the first element for which condition is true) enumerator,
