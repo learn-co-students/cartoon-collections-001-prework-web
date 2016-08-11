@@ -23,9 +23,10 @@ end
 def find_the_cheese(array)# code an argument here
   # the array below is here to help
   #cheese_types = ["cheddar", "gouda", "camembert"]
-if array.index("cheddar")
+  #the point of this lesson was to reinforce understanding of the difference between "puts" and "return" Thanks for the added stress!
+if array.index("cheddar")#you could do it this way.
   return "cheddar"
-elsif array.index {|x| x == "gouda"}
+elsif array.index {|x| x == "gouda"}#or you could do it this way.
   return "gouda"
 elsif array.index {|x| x == "camembert"}
   return "camembert"
