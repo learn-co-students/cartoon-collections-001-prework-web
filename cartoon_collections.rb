@@ -1,6 +1,6 @@
 def roll_call_dwarves(array)
   dwarves = ["Dopey", "Grumpy", "Bashful"]
-  new_array = dwarves.map.with_index(1) do |dwarf, index|
+  dwarvesRollCall = dwarves.map.with_index(1) do |dwarf, index|
     puts "#{index}. #{dwarf}\n"
   end
 #katz_deli.map.with_index(1) do |name, index|"#{index}. #{name}"
