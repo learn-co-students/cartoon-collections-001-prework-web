@@ -1,37 +1,30 @@
-def roll_call_dwarves(array)# code an argument here
-  # Your code here
+def roll_call_dwarves(array)
   dwarves = ["Dopey", "Grumpy", "Bashful"]
-  new_array = dwarves.map.with_index(1) do |name, index|
-    puts "#{index}. #{name}\n"
-end
+  new_array = dwarves.map.with_index(1) do |dwarf, index|
+    puts "#{index}. #{dwarf}\n"
+  end
 #katz_deli.map.with_index(1) do |name, index|"#{index}. #{name}"
 
-def summon_captain_planet(array)# code an argument here
-array.collect {|x| x.capitalize + "!"}
-end
+def summon_captain_planet(array)
+array.collect {|item| item.capitalize + "!"}
+  end
 #collect creates and returns a new array. So the trick here was to create something that could be used by any array on offer.
-#I spent a lot of time trying to make it work for just one specific array.
-#array = [ "a", "b", "c", "d" ]
-#array.collect { |x| x + "!" }         #=> ["a!", "b!", "c!", "d!"]
-#.capitalize CAPITALIZES
+#array.collect { |x| x + "!" }  #=> ["a!", "b!", "c!", "d!"]
+#.capitalize Capitalizes the first letter
 
 def long_planeteer_calls(array)
-  array.any? {|x| x.size > 4}
-     # any? [{ |obj| block }] → true or false
-end
+  array.any? {|elements| elements.size > 4}
+  # any? [{ |obj| block }] → true or false
+   end
 
-def find_the_cheese(array)# code an argument here
-  # the array below is here to help
-  #cheese_types = ["cheddar", "gouda", "camembert"]
-  #the point of this lesson was to reinforce understanding of the difference between "puts" and "return" Thanks for the added stress!
-if array.index("cheddar")#you could do it this way.
-  return "cheddar"
-elsif array.index {|x| x == "gouda"}#or you could do it this way.
-  return "gouda"
-elsif array.index {|x| x == "camembert"}
-  return "camembert"
-else return nil
+def find_the_cheese(array)
+  if array.index("cheddar")
+    return "cheddar"
+  elsif array.index {|cheese| cheese == "gouda"}
+    return "gouda"
+  elsif array.index {|cheese| cheese == "camembert"}
+    return "camembert"
+  else return nil
+    end
+  end
 end
-end
-end
-#[1,2,3,4,5].select { |num|  num.even?  }
