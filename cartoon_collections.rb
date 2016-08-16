@@ -19,6 +19,7 @@ def long_planeteer_calls(array)
 
 def find_the_cheese(array)
   if array.index("cheddar")
+    #.include? only returns true or false, not nil, so you have to use index here.
     return "cheddar"
   elsif array.index {|cheese| cheese == "gouda"}
     return "gouda"
