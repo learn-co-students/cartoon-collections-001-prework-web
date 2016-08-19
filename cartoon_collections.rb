@@ -4,6 +4,7 @@ def roll_call_dwarves(array)
     puts "#{index}. #{dwarf}\n"
   end
 #katz_deli.map.with_index(1) do |name, index|"#{index}. #{name}"
+#map and collect are the same thing!
 
 def summon_captain_planet(array)
 array.collect {|item| item.capitalize + "!"}
@@ -14,8 +15,8 @@ array.collect {|item| item.capitalize + "!"}
 
 def long_planeteer_calls(array)
   array.any? {|elements| elements.size > 4}
-  # any? [{ |obj| block }] → true or false
    end
+# any? [{ |obj| block }] → true or false
 
 def find_the_cheese(array)
   if array.index("cheddar")
