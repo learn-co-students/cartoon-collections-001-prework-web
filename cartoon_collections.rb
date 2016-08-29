@@ -18,9 +18,5 @@ end
 
 def find_the_cheese(snacks)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  if snacks.include?(cheese_types[0]) || snacks.include?(cheese_types[1] || snacks.include?(cheese_types[2]))
-    snacks.find { |x| x == cheese_types[0] || x == cheese_types[1] || x == cheese_types[2] }
-  else
-    nil
-  end
+  snacks.find do { |cheese| cheese_types.include?(cheese) }
 end
